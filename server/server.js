@@ -14,7 +14,7 @@ await  connectDB()
 app.use(express.json()) //   middleware  ALL request will be passed using json
 
 app.use(cors({
-  origin: 'https://imagify-client.onrender.com'
+  origin: '*'
 }))  //using middleware
 
 app.use('/api/user', userRouter)
